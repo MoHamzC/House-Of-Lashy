@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - House of Lashy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="appointment.html">Rendez-vous</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>Contactez-nous</h1>
+            <form id="contact-form">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <section id="info">
+            <h2>Informations Pratiques</h2>
+            <p>Adresse: 123 Beauty St, Glamour City, GC 12345</p>
+            <p>Téléphone: (123) 456-7890</p>
+            <p>Heures d'ouverture: Lun-Ven 9:00 - 18:00</p>
+        </section>
+        <section id="map">
+            <h2>Nous Trouver Ici</h2>
+            <div id="google-map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 House of Lashy. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        function initMap() {
+            var location = { lat: -25.344, lng: 131.036 };
+            var map = new google.maps.Map(document.getElementById('google-map'), {
+                zoom: 10,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

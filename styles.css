@@ -1,0 +1,154 @@
+/* Color Palette */
+:root {
+    --primary-color: #000000; /* Black */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #ff6347; /* Vibrant color (Tomato) */
+    --beige-light: #f5f5dc; /* Light Beige */
+    --beige-dark: #d2b48c; /* Dark Beige */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+}
+
+/* Main Banner */
+#banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#banner p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#banner button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#banner button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Service Presentation Section */
+#services {
+    padding: 50px 20px;
+    background-color: var(--beige-light);
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#services .service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--beige-dark);
+    border-radius: 10px;
+}
+
+#services .service-item img {
+    width: 100px;
+    height: 100px;
+}
+
+#services .service-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#services .service-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Customer Testimonials Section */
+#testimonials {
+    padding: 50px 20px;
+    background-color: var(--beige-dark);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#testimonials .testimonial-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+#testimonials .testimonial-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+#testimonials .testimonial-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
